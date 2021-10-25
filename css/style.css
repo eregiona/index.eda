@@ -121,6 +121,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 23px;
+    cursor: pointer;
 }
 .slide-content {
     max-width: 400px;
@@ -128,6 +129,16 @@ body {
 }
 .slide-summer {
     background-image: url(../img/summer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-autumn {
+    background-image: url(../img/autumn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-vitamin {
+    background-image: url(../img/vitamin.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -157,10 +168,10 @@ body {
     max-width: 570px;
     min-height: 380px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     flex-grow: 1;
+    justify-content: space-between;
 }
+
 .card-text-light {
     color: #fff;
 }
@@ -209,6 +220,9 @@ body {
     width: 100%;
     z-index: -2;
     object-fit: cover;
+}
+.card-footer {
+    margin-top: 60px;
 }
 .sweet-basket {
     margin-right: 50px;
@@ -313,6 +327,7 @@ body {
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    
 }
 .tabs-img {
     max-width: 100%;
@@ -450,4 +465,104 @@ body {
 .social-link {
     margin-left: 20px;
     text-decoration: none;
+}
+.slider-buttons {
+    position: absolute;
+    right: 46px;
+    bottom: 39px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+.slider-button {
+    cursor: pointer;
+}
+.swiper {
+    position: relative;
+}
+@media (max-width: 1260px) {
+    .container {
+        max-width: 960px;
+    }
+    .search-form {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tabs-content {
+        flex-wrap: wrap;
+    }
+    .tabs-card {
+        flex: 50%;
+        max-width: calc(50% - 20px);
+        margin-bottom: 40px;
+    }
+    .advantages-cards-description {
+        margin-bottom: 50px;
+    }
+    .auth {
+        margin-right: 50px;
+    }
+    .card-img1 {
+        margin-bottom: 50px;
+        margin-right: 20px;
+    }
+    .card-img2 {
+        max-height: 380px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .slide {
+        padding: 60px;
+    }
+    .delivery-card {
+        width: calc(50% - 30px);
+    }
+    .footer-logo {
+        margin-right: 40px;
+    }
+    .advantages-cards {
+        flex-wrap: wrap;
+    }
+    .card-img1 {
+        margin-bottom: 50px;
+        margin-right: 20px;
+    }
+    .card-img2 {
+        max-height: 380px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .search-form {
+        order: 5;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .promo {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+    .tabs-content {
+        flex-direction: column;
+        
+    }
+    .tabs-card {
+        max-width: 100%;
+    }
 }
